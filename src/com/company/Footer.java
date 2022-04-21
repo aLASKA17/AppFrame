@@ -13,14 +13,15 @@ public class Footer extends JPanel{
 
     JButton addTask;
     JButton clear;
-
+    String addTaskName = "Добавить задачу";
+    String clearTaskName = "Удалить завершенные задачи";
     Border emptyBorder = BorderFactory.createEmptyBorder();
 
     Footer()
     {
         this.setPreferredSize(new Dimension(400,80));
 
-        addTask = new JButton("Добавить задачу");
+        addTask = new JButton(addTaskName);
         addTask.setBorder(emptyBorder);
         this.setBackground(Color.gray);
         addTask.setFont(new Font("Comic Sans MS",Font.BOLD, 25));
@@ -29,7 +30,7 @@ public class Footer extends JPanel{
         this.add(addTask);
 
         this.add(Box.createHorizontalStrut(0));
-        clear = new JButton("Удалить завершенные задачи");
+        clear = new JButton(clearTaskName);
         clear.setFont(new Font("Comic Sans MS",Font.BOLD, 20));
         clear.setBorder(emptyBorder);
         clear.setBackground(Color.lightGray);
@@ -43,5 +44,11 @@ public class Footer extends JPanel{
 
     public JButton getClear() {
         return clear;
+    }
+    public String getTextAdd(){
+        return addTaskName;
+    }
+    public String getTextClear(){
+        return  clearTaskName;
     }
 }

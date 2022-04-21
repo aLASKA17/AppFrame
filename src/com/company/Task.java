@@ -1,7 +1,5 @@
 package com.company;
 import java.awt.*;
-import java.io.FileWriter;
-import java.io.IOException;
 
 import javax.swing.*;
 

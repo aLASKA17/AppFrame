@@ -20,13 +20,13 @@ public class AppFrame extends JFrame{
     private JButton newTask;
     private JButton clear;
 
+
     AppFrame()
     {
         this.setSize(400,700);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
-
         title = new TitleBar();
         footer = new Footer();
         list = new List();
