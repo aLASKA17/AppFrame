@@ -13,7 +13,6 @@ public class List extends JPanel{
         this.setBackground(Color.gray);
         this.setLayout(layout);
         this.setPreferredSize(new Dimension(400,560));
-
     }
 
    public void updateNumbers()

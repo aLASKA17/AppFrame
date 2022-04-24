@@ -1,7 +1,8 @@
 package com.company;
 
-import org.junit.Test;
+
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 
 public class FooterTest extends TitleBar {
@@ -17,6 +18,5 @@ public class FooterTest extends TitleBar {
     public void buttonClearTaskNameTest(){
         String text = "Удалить завершенные задачи";
         Assertions.assertEquals(text,fr.getTextClear());
-
     }
 }

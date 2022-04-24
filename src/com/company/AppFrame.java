@@ -42,7 +42,6 @@ public class AppFrame extends JFrame{
     }
    public void save(){
        Component[] listItems = this.getComponents();
-
    }
 
     public void addListeners()

@@ -38,7 +38,7 @@ public class TaskTest extends TitleBar {
 
         JButtonOperator addButton = new JButtonOperator(mainFrame,"Добавить задачу");
         addButton.push();
-        JTextFieldOperator textField = new JTextFieldOperator(mainFrame,9);
+        JTextFieldOperator textField = new JTextFieldOperator(mainFrame,8);
         assertTrue(textField.getText().equals("Новая задача"));
         mainQueue.waitEmpty(3000);
     }
@@ -57,7 +57,7 @@ public class TaskTest extends TitleBar {
     }
     @Test
     public void testChangeTask(){
-        JTextFieldOperator textField = new JTextFieldOperator(mainFrame,0);
+        JTextFieldOperator textField = new JTextFieldOperator(mainFrame,5);
             textField.setText("Погулять с собакой");
         assertTrue(textField.getText().equals("Погулять с собакой"));
         mainQueue.waitEmpty(3000);

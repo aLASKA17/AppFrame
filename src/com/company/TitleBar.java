@@ -7,9 +7,10 @@ import javax.swing.JPanel;
 
 public class TitleBar extends JPanel{
 
-    String text = "To-Do Приложение";
+
     TitleBar()
     {
+        String text = "To-Do Приложение";
         this.setPreferredSize(new Dimension(400,80));
         this.setBackground(Color.gray);
         JLabel titleText = new JLabel(text);
@@ -19,8 +20,4 @@ public class TitleBar extends JPanel{
         titleText.setHorizontalAlignment(JLabel.CENTER);
         this.add(titleText);
     }
-    public String getText(){
-        return text;
-    }
-
 }
