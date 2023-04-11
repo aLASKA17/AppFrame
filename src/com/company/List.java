@@ -10,7 +10,7 @@ public class List extends JPanel{
     {
         GridLayout layout = new GridLayout(10,1);
         layout.setVgap(5);
-        this.setBackground(Color.gray);
+        this.setBackground(Color.DARK_GRAY);
         this.setLayout(layout);
         this.setPreferredSize(new Dimension(400,560));
     }

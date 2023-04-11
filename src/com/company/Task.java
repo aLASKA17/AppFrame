@@ -43,26 +43,26 @@ public class Task extends JPanel{
 
         checked = false;
 
-        this.setBackground(Color.gray);
+        this.setBackground(Color.DARK_GRAY);
 
         index = new JLabel("");
         index.setPreferredSize(new Dimension(20,20));
-        index.setFont(new Font("Comic Sans MS",Font.BOLD,13));
+        index.setFont(new Font("Roboto",Font.BOLD,13));
         index.setHorizontalAlignment(JLabel.CENTER);
         index.setForeground(Color.white);
         this.add(index,BorderLayout.WEST);
 
         taskName = new JTextField(name);
-        taskName.setFont(new Font("Comic Sans MS",Font.BOLD,13));
+        taskName.setFont(new Font("Roboto",Font.BOLD,13));
         taskName.setBorder(BorderFactory.createEmptyBorder());
-        taskName.setBackground(Color.gray);
+        taskName.setBackground(Color.DARK_GRAY);
         taskName.setForeground(Color.white);
         this.add(taskName,BorderLayout.CENTER);
 
         done = new JCheckBox();
         done.setPreferredSize(new Dimension(40,20));
         done.setBorder(BorderFactory.createEmptyBorder());
-        done.setBackground(Color.gray);
+        done.setBackground(Color.DARK_GRAY);
         done.setFocusPainted(true);
         this.add(done,BorderLayout.EAST);
     }
